@@ -57,7 +57,9 @@ exports.commands = {
         var target = user || by;
         return Bot.say(by, targetRoom, '(' + (Economy.isRegistered(room) ? room : 'global') + ') ' + target + ' has ' + Economy.getPoints(target, room) + ' ' + Economy.currency(room));
     },
-    top: function(arg, by, room) {
+    top: 'scoreboard',
+    scoreboard: 'leaderboard',
+    leaderboard: function(arg, by, room) {
         if (!Bot.hasRank(by, '+%@#&~')) {
             var targetRoom = ',' + by;
         }
@@ -69,21 +71,7 @@ exports.commands = {
         }
         Bot.say(by, targetRoom, Economy.getTop(room));
     },
-    leaderboard: function(arg, by, room) {
-        if (!Bot.hasRank(by, '+%@#&~')) {
-            var targetRoom = ',' + by;
-        }
-        else {
-            targetRoom = room;
-        }
-        if (arg) {
-            room = toId(arg);
-        }
-        var text = Economy.getHastebinLeaderboard(room);
-        Tools.uploadToHastebin(text, function(link) {
-            return Bot.say(by, targetRoom, link);
-        }.bind(this));
-    },
+    
     config: 'cp',
     cp: function(arg, by, room) {
         if (!Bot.hasRank(by, '#~') || !arg) return false;

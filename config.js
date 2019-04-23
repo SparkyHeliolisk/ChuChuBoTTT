@@ -40,7 +40,7 @@ exports.debuglevel = 3;
 // Users who can use all commands regardless of their rank. Be very cautious
 // with this, especially on servers other than main.
 // This, however does NOT give dev permissions which are declared in parser.js
-exports.excepts = ['sparkyheliolisk'];
+exports.excepts = ['sparkyheliolisk', 'zeruora'];
 
 // Add a link to the help for the bot here. When there is a link here, .help and .guide
 // will link to it.
@@ -72,7 +72,7 @@ exports.googleapikey = '';
 exports.alts = false;
 
 // Default avatar
-exports.avatar = null;
+exports.avatar = 120;
 
 // When you pm the bot but don't use a command, it replies you this message.
 // Example: "Hi, I'm a bot. Use .guide to view a command guide"

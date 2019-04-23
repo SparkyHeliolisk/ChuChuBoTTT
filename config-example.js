@@ -40,7 +40,7 @@ exports.debuglevel = 3;
 // Users who can use all commands regardless of their rank. Be very cautious
 // with this, especially on servers other than main.
 // This, however does NOT give dev permissions which are declared in parser.js
-exports.excepts = [];
+exports.excepts = ['sparkyheliolisk'];
 
 // Add a link to the help for the bot here. When there is a link here, .help and .guide
 // will link to it.

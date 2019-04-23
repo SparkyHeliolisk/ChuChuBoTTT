@@ -4,9 +4,9 @@ exports.url = 'play.pokemonshowdown.com';
 // The nick and password to log in with
 var nick = exports.nick = 'Waver-B'
 exports.pass = '12349';
-exports.rooms = ['groupchat-waverb-debatingsociety', 'botdev'
+exports.rooms = ['groupchat-waverb-debatingsociety', 'botdev']
 // A list of private rooms that the bot will not leak through the seen command
-exports.privaterooms = ['groupchat-waverb-debatingsociety'];
+exports.privaterooms = [''];
 
 // The character text should start with to be seen as a command.
 // Note that using / and ! might be 'dangerous' since these are used in

@@ -4,7 +4,7 @@ exports.url = 'play.pokemonshowdown.com';
 // The nick and password to log in with
 var nick = exports.nick = 'Waver-B'
 exports.pass = '12349';
-
+exports.rooms = ['groupchat-waverb-debatingsociety', 'botdev'
 // A list of private rooms that the bot will not leak through the seen command
 exports.privaterooms = ['groupchat-waverb-debatingsociety'];
 
